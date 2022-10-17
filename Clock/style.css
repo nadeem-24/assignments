@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+}
+
+.btn {
+    width: 25%;
+    margin: 0em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer-btn {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background: #3882F6;
+    padding: .4em .75em .4em;
+    cursor: pointer;
+    border-radius: 5px;
+}
