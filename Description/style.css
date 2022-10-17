@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: none;
+  padding: none;
+}
+
+.info {
+  border: solid 1px black;
+}
+
+.info {
+    min-height: 5rem;
+    min-width: fit-content;
+    margin: 1rem 0rem 1rem;
+}
+.html_info {
+    display: none;
+    position:absolute;
+    color: blue;
+}
+
+.css_info {
+    display: none;
+    position:absolute;
+}
+
+.js_info {
+    display: none;
+    position:absolute;
+}
