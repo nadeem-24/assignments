@@ -1030,6 +1030,7 @@ h6 {
 /* media queries */
 
 
+
 @media (min-width: 0px) and (max-width: 576px) {
     .media-container {
         display: none;
@@ -1040,13 +1041,19 @@ h6 {
         justify-content: space-between;
     }
 
+
+    .site-logo {
+        display: flex;
+        justify-content: center;
+    }
+
     .site-logo img {
         width: 33%;
         margin-top: .5em;
     }
     
     .links-container {
-        width: 50%;
+        width: 100%;
         margin: .5em;
     }
 
@@ -1054,8 +1061,30 @@ h6 {
         width: 100%;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        line-height: 2rem;
     }
+
+
+    /* Main slide  */
+
+    .slide-container {
+        padding: 1em;
+
+    }
+    .slide-headings {
+        width: 100%;
+        padding: 2em;
+    }
+
+    .slide-headings h1 {
+        width: 100%;
+    }
+
+    .slide-btn {
+        width: 30%;
+    }
+
 
     /* Services svg section */
     .arrow-btn-1,
@@ -1072,6 +1101,8 @@ h6 {
     .services-scr {
         margin-top: 2rem;
     }
+
+
 
     /* about company section */
     .abt-company {
@@ -1109,11 +1140,42 @@ h6 {
 
 
     /* all cards */
+    .choice {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
 
-    .card-container {
-        display: none;
-        
     }
+
+
+    .choice p {
+        width: 100%;
+        color: var(--clr-gray);
+        text-align: center;
+    }
+
+    
+    .choice h1 {
+        width: 100%;
+        text-align: center;
+    }
+       
+    /* cards section  */
+    
+    .all-cards {
+        padding-bottom: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* All 4 cards  */
+    .card-1 {
+        width: 50%;
+        margin-bottom: 1em;
+    }
+
 
     /* client info */
     .client-info-container {
@@ -1167,22 +1229,98 @@ h6 {
      .ser-sec-list {
         width: 80%;
         margin-bottom: 1em;
+     } 
+
+     /* Client info section */
+
+
+     .client-info-container {
+        margin-top: 2em;
+        margin-bottom: 3em;
      }
+
 
      /* product section img */
 
-     /* product section info */
-     .product-info {
+     .pro-img-container {
+        width: 100%;
+        display: flex;
         flex-direction: column;
-     }
-     .p-info-headings {
-        width: 100%;
-     }
-     .p-info-para {
-        width: 100%;
-        line-height: 2rem;
+        
      }
 
+     .all-img {
+        width: 100%;
+        margin-bottom: 1em;
+     }
+
+
+     /* Building product section */
+
+     .product-container {
+        width: 100%;
+        background-image: url("images/team-new.jpg");
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3em;
+
+    }
+    
+    .product-heading {
+        width: 100%;
+    }
+    
+    .product-heading h3 {
+        width: 100%;
+    }
+    
+    .contact-btn {
+        width: 40%;
+
+    }
+
+
+     /* We deliver solution */
+
+     .del-sol-content {
+        width: 80%;
+        margin: 0;
+        padding:0;
+        /* border: solid red 1px; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    
+    
+    .del-sol-content  h2 {
+        margin-bottom: 1em;
+        width: 100%;
+        margin-left: 3em;
+        text-align: center;
+    }
+    
+    
+    .del-sol-content h1 {
+        /* text-align: center; */
+        width: 100%;
+        font-size: var(--fs-large);
+        font-weight: var(--fw-extrabold);
+        margin-left: 3em;
+    }
+    
+    .sol-icons {
+        flex-wrap: wrap;
+    }
+
+    .uni-icon {
+        width: 50%;
+        margin-bottom: 1em;
+    }
+    .uni-icon1 {
+        width: 50%;
+    }
      /* Map section */
 
      .client-card-container  {
@@ -1191,8 +1329,24 @@ h6 {
         justify-content: space-between;
      }
 
-     .client1 {
+     .index {
         width: 100%;
      }
 
+     .client1 {
+        width: 100%;
+        margin-bottom: 1em;
+     }
+
+
+     /* Footer */
+     .footer-links {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 2em;
+    }
+
 } 
+
