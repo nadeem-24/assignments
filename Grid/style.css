@@ -96,6 +96,8 @@ body {
     margin-top: 1em;
 }
 
+/* First grid section */
+
 .main-grid {
     display: grid;
     gap: 1.5rem;
@@ -109,7 +111,7 @@ body {
     grid-area: 2 / 2 / span 3 / span 2;
 }
 
-/* Second Grid */
+/* Second Grid section */
 
 .second-grid {
     margin-top: 1em;
@@ -128,7 +130,7 @@ body {
     grid-row-start: 2;
 }
 
-/* Thrid grid */
+/* Thrid grid section */
 
 .thrid-grid {
     margin-top: 2rem;
@@ -148,4 +150,52 @@ body {
 
 .third-col-5 {
     grid-area: 3/ 1/ span 1 / span 3;
+}
+
+
+@media (min-width: 0px) and (max-width: 576px) {
+    .main-grid {
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-two {
+        grid-area: 2 / 1 / span 1 / span 2;
+    }
+
+    /* Second Section */
+    .second-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .second-col {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    
+    .second-col-3 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    /* thrid section */
+    
+    .thrid-grid {
+        row-gap: 2rem;
+        column-gap: 2rem;
+        grid-template-columns: auto auto ;
+    }
+    
+    .thrid-col-3 {
+        grid-area: 1 / 2 / span 1 / span 1;
+    }
+    
+    .third-col-4 {
+        grid-area: 2/ 1/ span 1 /span 2;
+    }
+    
+    .third-col-5 {
+        grid-area: 3/ 1/ span 1 / span 2;
+    }
 }
