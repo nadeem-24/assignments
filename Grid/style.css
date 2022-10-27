@@ -1,0 +1,151 @@
+:root {
+    /* colors */
+    --clr-media: #141d38;
+    --clr-white: #fff;
+    --clr-blue: #007bff;
+    --clr-indigo: #6610f2;
+    --clr-dark-blue:#46416b;
+    --clr-purple: #6f42c1;
+    --clr-pink: #e83e8c;
+    --clr-red: #dc3545;
+    --clr-cyan: #17a2b8;
+    --clr-gray: #6c757d;
+    --clr-light-gray:#f8f8f8;
+    --clr-gray-dark: #343a40;
+    --clr-primary: #007bff;
+    --clr-secondary: #6c757d;
+    --clr-light: #f8f9fa;
+    --clr-dark: #343a40;
+    --clr-footer-text:#aeaacb;
+
+    
+    /* Typography */
+    --ff-primary:'Roboto', sans-serif;;
+
+    --fw-thin100:100;
+    --fw-light300:300;
+    --fw-regular400:400;
+    --fw-medium500:500;
+    --fw-bold700:700;
+    --fw-xbold900:900;
+    
+    --fs-xs:0.7rem;
+    --fs-medium:1.25rem;
+    --fs-large:1.5rem;
+    --fs-xlarge:1.75rem;
+    --fs-heading:2.1rem;
+
+    /* Default Border */
+
+    --border-green:solid 1px green;
+    --border-blue:solid 1px blue;
+    --border-white:solid 1px white;
+    --border-black:solid 1px black;
+
+    /* Shadow */
+
+    --bs-card: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+/*  */
+
+.grid-c {
+    padding: 1em;
+    background: var(--clr-cyan);
+    color: var(--clr-white);
+    border-radius: 5px;
+    box-shadow: var(--bs-card);
+}
+
+.grid-c h1 {
+    font-size: var(--fs-xlarge);
+    font-weight: var(--fw-bold700);
+}
+
+.grid-c p {
+    line-height: 1rem;
+    font-size: var(--fs-medium);
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.main-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.grid-two {
+    grid-column-start: 3;
+    grid-column: 2 / span 2;
+    grid-area: 2 / 2 / span 3 / span 2;
+}
+
+/* Second Grid */
+
+.second-grid {
+    margin-top: 1em;
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.second-col {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.second-col-3 {
+    grid-row-start: 2;
+}
+
+/* Thrid grid */
+
+.thrid-grid {
+    margin-top: 2rem;
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 4rem;
+    grid-template-columns: auto auto auto;
+}
+
+.thrid-col-3 {
+    grid-area: 1 / 3 / span 2 / span 1;
+}
+
+.third-col-4 {
+    grid-area: 2/ 1/ span 1 /span 2;
+}
+
+.third-col-5 {
+    grid-area: 3/ 1/ span 1 / span 3;
+}
