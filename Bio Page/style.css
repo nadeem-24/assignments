@@ -1,0 +1,290 @@
+/* Root Properties */
+:root {
+    /* colors */
+    --clr-media: #141d38;
+    --clr-white: #fff;
+    --clr-blue: #007bff;
+    --clr-indigo: #6610f2;
+    --clr-dark-blue:#46416b;
+    --clr-purple: #6f42c1;
+    --clr-pink: #e83e8c;
+    --clr-red: #dc3545;
+    --clr-cyan: #17a2b8;
+    --clr-gray: #6c757d;
+    --clr-light-gray:#f8f8f8;
+    --clr-gray-dark: #343a40;
+    --clr-primary: #007bff;
+    --clr-secondary: #6c757d;
+    --clr-light: #f8f9fa;
+    --clr-dark: #343a40;
+    --clr-footer-text:#aeaacb;
+
+    
+    /* Typography */
+    --ff-primary:'Roboto', sans-serif;;
+
+    --fw-thin100:100;
+    --fw-light300:300;
+    --fw-regular400:400;
+    --fw-medium500:500;
+    --fw-bold700:700;
+    --fw-xbold900:900;
+    
+    --fs-xs:0.7rem;
+    --fs-medium:1.25rem;
+    --fs-large:1.5rem;
+    --fs-xlarge:1.75rem;
+    --fs-heading:2.1rem;
+
+    /* Default Border */
+
+    --border-green:solid 1px green;
+    --border-blue:solid 1px blue;
+    --border-white:solid 1px white;
+    --border-black:solid 1px black;
+
+    /* Shadow */
+
+    --bs-card: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+/* Basic CSS resets */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    font-family: var(--ff-primary);    
+}
+
+/* Navigation Bar Styling */
+
+.bio {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: var(--fs-xlarge);
+    font-weight: var(--fw-xbold900);
+}
+/* Hamburger Menu Styling */
+.hamburger {
+    width: 100%;
+    margin-bottom: 3em;
+    /* background: var(--clr-blue); */
+}
+.hamburger .toggler {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 4;
+    width: 50px;
+    height: 35px;
+    opacity: 0;
+}
+
+.hamburger input[type="checkbox"]:checked ~ .menu-items {
+    display: block;
+}
+.hamburger input[type="checkbox"]:checked ~ .lines .line2 {
+    display: none;
+}
+
+
+.line1 {
+    transform-origin: 0% 0%;
+}
+
+.line3 {
+    transform-origin: 0% 100%;
+}
+
+.menu-items {
+    display: none;
+    color: var(--clr-white);
+    line-height: 2rem;
+    padding-top: 1em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.menu-items li a{
+    color: var(--clr-dark);
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold700);
+    cursor: pointer;
+}
+
+.menu-items li a:hover {
+    color: var(--clr-blue);
+    cursor: pointer;
+}
+
+.lines div {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background: var(--clr-dark);
+    width: 40px;
+    height: 5px;
+    margin: .4em;
+}
+
+
+/* all h1 */
+h1 {
+    width: 90%;
+    font-size: var(--fs-xlarge);
+    font-weight: var(--fw-xbold900);
+    text-align: center;
+    border-bottom: solid 3px black;
+    margin: auto;
+}
+
+/* SKills Section */
+.skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-light-gray);
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.skills-container .skill-tab1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.s-one,
+.s-two {
+    width: 44%;
+    background: var(--clr-white);
+    border: var(--border-white);
+    border-radius: 5px;
+    box-shadow:var(--bs-card);
+
+}
+
+.s-one h3,
+.s-two h3 {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold700);
+    padding: .5em;
+}
+
+.s-one ul,
+.s-two ul {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-light300);
+    line-height: 2rem;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    list-style-type: disc;
+}
+
+.skills-container .skill-tab2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    list-style-type: disc;
+}
+
+.s-three {
+    width: 92%;
+    background: var(--clr-white);
+    border: var(--border-white);
+    border-radius: 5px;
+    box-shadow:var(--bs-card);
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold700);
+    padding: 1em;
+    
+}
+
+/* Education Section */
+
+.edu-container {
+    width: 100%;
+    background: var(--clr-light-gray);
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.edu-tab {
+    width: 90%;
+    background: var(--clr-white);
+    border: var(--border-white);
+    border-radius: 5px;
+    box-shadow:var(--bs-card);
+    margin-bottom: 1em;
+
+}
+
+.edu-tab h3 {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold700);
+    padding: .5em;
+}
+
+.edu-tab p {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-light300);
+    line-height: 2rem;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+
+/* Footer */
+.footer-container {
+    background: var(--clr-media);
+    color: var(--clr-white);
+    font-size: var(--fs-large);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    margin-top: 1em;
+}
+
+
+@media (min-width: 0px) and (max-width: 576px) {
+    .skill-tab1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .s-one,
+    .s-two {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+}
